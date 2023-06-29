@@ -35,6 +35,7 @@ function profileFetch() {
         postHTML += `
         <div class="card text-center" id="cards" data-post-id="${userProfile._id}">
           <div class="card-header">
+          <span class="deleteButton"><button class="btn btn-outline-danger" id="${userProfile._id}" onclick="deletePost('${userProfile._id}')">Χ</button></span>
               <b>@${userProfile.username}</b>
           </div>
           <div class="card-body">
