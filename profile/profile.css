@@ -55,6 +55,8 @@ hr {
 .userInfo {
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .username {
@@ -111,7 +113,6 @@ hr {
     #bioDisplay {
         background: rgba(220, 220, 220, 0.336);
         width: 300px;
-        height: 100pt;
         border-radius: 10px;
         margin-right: 30px;
         padding: 15px;
@@ -122,6 +123,7 @@ hr {
         height: 75pt;
         border-radius: 10px;
         margin-right: 30px;
+        padding: 15px;
     }
 }
 
@@ -129,7 +131,6 @@ hr {
     #bioDisplay {
         background: rgba(220, 220, 220, 0.336);
         width: 100px;
-        height: 100pt;
         border-radius: 10px;
         margin-right: 30px;
         padding: 15px;
@@ -140,6 +141,7 @@ hr {
         height: 100pt;
         border-radius: 10px;
         margin-right: 30px;
+        padding: 15px;
     }
 }
 
@@ -168,7 +170,7 @@ main {
 }
 
 #profileContainer {
-    height: 331px; 
+    height: 330px; 
     overflow: auto;
 }
 
