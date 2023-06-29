@@ -1,0 +1,209 @@
+/* Landing Page CSS */
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,13,141,1) 35%, rgb(2, 148, 102) 100%);
+    color: #ffffff;
+    }
+    
+    /* NAVIGATION*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px 10px 50px;
+    margin-top: 10px;
+}
+     
+.navbar-logo img{
+    max-height: 130px;
+}
+     
+.page-links li {
+    list-style: none;
+    display: inline;
+    margin: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+     @media screen and (max-width: 600px) {
+     
+     }
+    
+     .page-links a {
+         text-decoration: none;
+         color: white;
+     }
+    
+     .page-links a:hover, .page-links .current{
+         text-decoration: underline;
+         text-decoration-color: black;
+         text-decoration-thickness: 2px;
+     }
+    
+hr {
+    margin-bottom: 0;
+    color: gainsboro;
+}
+/* END OF NAVIGATION */
+   
+
+#profile-img {
+    max-height: 90px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.img-name {
+    margin-right: 50px;
+    max-width: 100%;
+}
+
+.aboutMe {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#bioContainer {
+    background: rgba(220, 220, 220, 0.336);
+<<<<<<< HEAD
+    width: 750px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 30px;
+=======
+    width: 700px;
+    height: 100pt;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 15px;
+    color: white;
+    font-weight: 300;
+  }
+  
+  #bioEdit {
+    display: none;
+  }
+  
+  #bioContainer:hover #bioDisplay,
+  #bioContainer:hover #bioEdit {
+    display: none;
+  }
+  
+  #bioContainer:hover #bioEdit {
+    display: block;
+  }
+  
+  #biotext {
+    width: 700px;
+    height: 75pt;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 15px;
+    color: black;
+    font-weight: 300;
+  }
+
+@media (max-width: 1000px){
+    #bioDisplay {
+        background: rgba(220, 220, 220, 0.336);
+        width: 300px;
+        height: 100pt;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding: 15px;
+    }
+    #biotext {
+        background: white;
+        width: 300px;
+        height: 75pt;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px){
+    #bioDisplay {
+        background: rgba(220, 220, 220, 0.336);
+        width: 100px;
+        height: 100pt;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding: 15px;
+    }
+    #biotext {
+        background: white;
+        width: 100px;
+        height: 100pt;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding: 15px;
+    }
+>>>>>>> d3a44d38d28f0fea74d4464eb82c6cd8bcf87d7e
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+main {
+    margin: 60px;
+}
+    
+#cards {
+    margin: 30px;
+    max-width: 15in;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.mine {
+    flex: 1;
+    margin-left: 70px;
+}
+
+#profileContainer {
+    height: 500px; 
+    overflow: auto;
+}
+
+.header {
+    margin-left: 25px;
+}
+
+.new {
+    flex: 1;
+}
+
+.new textarea {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+<<<<<<< HEAD
+}
+=======
+    padding: 15px;
+}
+
+.deleteButton {
+    border-style: none;
+    background: none;
+    display: flex;
+    justify-content:end;
+}
+>>>>>>> d3a44d38d28f0fea74d4464eb82c6cd8bcf87d7e
