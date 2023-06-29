@@ -3,18 +3,18 @@
 "use strict";
 
 const logoutButton = document.querySelector("#logout");
-const postContainer = document.querySelector('#postContainer');
+const postContainer = document.querySelector("#postContainer");
 logoutButton.onclick = logout;
 
 function convertDateTime(apiDateTime) {
-    const date = new Date(apiDateTime);
-    const formattedDateTime = date.toLocaleString();
-    return formattedDateTime;
+  const date = new Date(apiDateTime);
+  const formattedDateTime = date.toLocaleString();
+  return formattedDateTime;
 }
 
 //LIKES FEATURE
 function countLikes(likes) {
-    return likes.length;
+  return likes.length;
 }
 
 /*function updateLikesCount(likesCountElement, likes) {
@@ -67,21 +67,21 @@ function attachLikeButtonEvents() {
 }*/
 
 function postFetch() {
-    const loginData = getLoginData();
-    console.log(loginData.token);
+  const loginData = getLoginData();
+  console.log(loginData.token);
 
-    const options = {
-        method: "GET",
-        headers: {
-            Authorization: `Bearer ${loginData.token}`,
-        },
-    };
+  const options = {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${loginData.token}`,
+    },
+  };
 
-    fetch(apiBaseURL + "/api/posts", options)
-        .then(response => response.json())
-        .then(posts => {
-            posts.forEach(post => {
-                const cardHTML = `
+  fetch(apiBaseURL + "/api/posts", options)
+    .then((response) => response.json())
+    .then((posts) => {
+      posts.forEach((post) => {
+        const cardHTML = `
             <div class="card text-center" id="cards" data-post-id="${post._id}">
                 <div class="card-header">
                     <b>@${post.username}</b>
@@ -91,18 +91,20 @@ function postFetch() {
                 </div><br>
                 <div class="card-footer text-muted">
                     ${convertDateTime(post.createdAt)}<br>
-                    <span class="likes-count">${countLikes(post.likes)} Likes</span>
+                    <span class="likes-count">${countLikes(
+                      post.likes
+                    )} Likes</span>
                     <button class="like-button">❤</button>
                 </div>
             </div>`;
-                postContainer.innerHTML += cardHTML;
-            });
+        postContainer.innerHTML += cardHTML;
+      });
 
-           // attachLikeButtonEvents();
-        })
-        .catch(error => {
-            console.error(error);
-        });
+      // attachLikeButtonEvents();
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
 postFetch();
