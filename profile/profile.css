@@ -48,13 +48,15 @@ hr {
 
 #profile-img {
     max-height: 90px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 
 .userInfo {
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .username {
@@ -98,33 +100,51 @@ hr {
   }
   
   #biotext {
-    width: 750px;
-    height: 100px;
+    width: 700px;
+    height: 75pt;
     border-radius: 10px;
     margin-right: 30px;
-    padding: 10px;
+    padding: 15px;
     color: black;
     font-weight: 300;
   }
 
 @media (max-width: 1000px){
-    #bioContainer {
+    #bioDisplay {
         background: rgba(220, 220, 220, 0.336);
         width: 300px;
+        height: 100pt;
         border-radius: 10px;
         margin-right: 30px;
+        padding: 15px;
     }
-    
+    #biotext {
+        background: white;
+        width: 300px;
+        height: 75pt;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 600px){
-    #bioContainer {
+    #bioDisplay {
         background: rgba(220, 220, 220, 0.336);
         width: 100px;
+        height: 100pt;
         border-radius: 10px;
         margin-right: 30px;
+        padding: 15px;
     }
-    
+    #biotext {
+        background: white;
+        width: 100px;
+        height: 100pt;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding: 15px;
+    }
 }
 
 h4 {
@@ -152,7 +172,7 @@ main {
 }
 
 #profileContainer {
-    height: 330px; 
+    height: 331px; 
     overflow: auto;
 }
 
@@ -168,10 +188,12 @@ main {
     width: 100%;
     border-radius: 10px;
     margin-top: 20px;
+    padding: 15px;
 }
 
 .deleteButton {
     border-style: none;
     background: none;
-    
+    display: flex;
+    justify-content:end;
 }
