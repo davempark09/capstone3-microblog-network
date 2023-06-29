@@ -134,5 +134,3 @@ function untoggleLike(postId) {
       window.location.reload();
     });
 }
-
-postFetch();
