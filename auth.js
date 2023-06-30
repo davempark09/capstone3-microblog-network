@@ -45,7 +45,7 @@ function login (loginData) {
         .then(loginData => {
             if(loginData.statusCode === 200) {
                 window.localStorage.setItem("login-data", JSON.stringify(loginData));
-                window.location.assign("/posts");  // redirect
+                window.location.assign("./posts");  // redirect
                 return loginData;
             } else {
                 alert("The login information is incorrect.")
@@ -82,6 +82,6 @@ function logout () {
             // error with the fetch request above.
 
             window.localStorage.removeItem("login-data");  // remove login data from LocalStorage
-            window.location.assign("/");  // redirect back to landing page
+            window.location.assign("../");  // redirect back to landing page
         });
 }

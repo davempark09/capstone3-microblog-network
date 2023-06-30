@@ -25,45 +25,46 @@
     <!-- Run BEFORE page is finished loading (before window.onload): -->
     <script src="../auth.js"></script>
     <script>
-        if (isLoggedIn() === false) window.location.replace("/");
+        if (isLoggedIn() === false) window.location.replace("../");
     </script>
 </head>
 
 <body>
 
-<div class="navbar">
-    <div class="navbar-logo">
-        <a href="index.html"> <img src="../images/craftsHQ.png" alt="LOGO"></a>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="../index.html"> <img src="../images/craftsHQ.png" alt="LOGO"></a>
+        </div>
+
+        <div class="page-links">
+            <ul>
+                <li><a href="../profile/index.html"><img src="../images/profile.png" id="profile"></a></li>
+                <li><button id="logout" class="btn btn-outline-light">Logout</button></li>
+            </ul>
+        </div>
+
     </div>
+    <hr>
 
-    <div class="page-links">
-        <ul>
-            <li><a href="../profile/index.html" ><img src="../images/profile.png" id="profile"></a></li>
-            <li><button id="logout" class="btn btn-outline-light">Logout</button></li>
-        </ul>
-    </div>
+    <div class="content">
 
-</div><hr>
+        <header>
+            <h1>POSTS</h1>
+        </header>
 
-<div class="content">
-    
-    <header>
-        <h1>POSTS</h1>
-    </header>
-
-    <!-- <select id="sort-dropdown">
+        <!-- <select id="sort-dropdown">
         <option value="placeholder">Sort By..</option>
         <option value="byDate">Date Posted</option>
         <option value="byUser">User</option>
         <option value="byLikes">Most Liked</option>
     </select> -->
 
-    <main>
-      <div id="postContainer"></div>
+        <main>
+            <div id="postContainer"></div>
 
-    </main>
+        </main>
 
-</div>
+    </div>
     <footer></footer>
 
     <!-- Page-specific code -->
